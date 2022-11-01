@@ -1,0 +1,147 @@
+:root{
+    --dark:#374151;
+    --darker:#1F2937;
+    --darkest: #111827 ;
+    --grey: #6b7280;
+    --light: #EEE;
+    --pink: #Ec4899;
+    --purple: #8B5Cf6;
+
+}
+
+*{
+    
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Fira sans', sans-serif;
+    background-color: var(--dark);
+    color: #EEE;
+
+}
+header {
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100;
+    margin: 0;
+    
+    
+
+}
+header h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+.heading{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--grey);
+    padding: 50px 0px 0px 110px ;
+    max-width: 800px;
+    width: 100;
+    margin: 0;
+    
+}
+
+#messages{
+    display: flex;
+    margin-left: 1.5rem;
+}
+input, button{
+    appearance: none;
+    border: none;
+    outline:none;
+    background: none;
+}
+#todo-item{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color: var(--light);
+
+}
+.text{
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    color: var(--light);
+    border-spacing: space-between;
+}
+#todo-item::placeholder{
+    color: var(--grey)
+}
+.btn1{
+    color: var(--pink);
+    font-size: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right , var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn1:hover{
+    opacity: 0.8;
+}
+.btn1:active{
+    opacity: 0.1;
+}
+#ul-item{
+    padding: 1rem 2rem;
+    max-width: 800px;
+    width: 100;
+    margin: 10px;
+    
+}
+
+
+.text{
+    
+    margin-top: 5px ;
+    margin-left: 1.5rem;
+    
+    
+    
+    
+}
+
+
+.editBtn{
+    color: var(--pink);
+    font-size: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right , var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+.btn{
+    color: rgb(146, 39, 39);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+    
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn:active{
+    opacity: 0.1;
+}
+.editBtn:hover{
+    opacity: 0.8;
+}
+.editBtn:active{
+    opacity: 0.1;
+}
+
+
