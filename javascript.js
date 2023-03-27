@@ -8,6 +8,19 @@
 //     console.log(messages)
 //     value.value=""
 // }
+var body = document.querySelector('body');
+var Todo = document.querySelector('.Todo');
+
+
+Todo.addEventListener('keydown', (e) => {
+  // console.log(e.key, "==>>yeh wala key dabai hai")
+  if (e.key === 'Enter') {
+    addTodo()
+
+  }
+})
+
+
 
 var list = document.getElementById("list");
 function addTodo() {
@@ -17,8 +30,10 @@ function addTodo() {
     alert("please enter your task");
   } else {
     
-
-    // Create Li tag with text node
+   
+ 
+   
+     // Create Li tag with text node
     var li = document.createElement("li");
     var liText = document.createTextNode(text.value);
     li.setAttribute("class", "text");
