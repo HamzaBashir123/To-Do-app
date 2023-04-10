@@ -26,7 +26,7 @@ var list = document.getElementById("list");
 function addTodo() {
     var text = document.getElementById("todo-item");
 
-  if (text.value == "") {
+  if (text.value.trim() == "") {
     alert("please enter your task");
   } else {
     
@@ -74,7 +74,7 @@ function deleteAll() {
 }
 function editItem(e) {
   var promValue = e.parentNode.firstChild.nodeValue;
-  var newValue = prompt("Enter Edit Value", promValue);
+  var newValue = prompt("Enter Edit Value", promValue.trim());
   promValue = newValue;
   e.parentNode.firstChild.nodeValue = promValue;
   console.log(promValue);

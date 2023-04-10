@@ -24,6 +24,7 @@ header {
     max-width: 800px;
     width: 100;
     margin: 0;
+    /* border:  2px solid red; */
     
     
 
@@ -67,6 +68,7 @@ input, button{
 
 }
 .text{
+    /* display: flex; */
     flex: 1 1 0%;
     background-color: var(--darker);
     padding: 1rem;
@@ -75,6 +77,7 @@ input, button{
     font-size: 1.25rem;
     color: var(--light);
     border-spacing: space-between;
+    margin-top: 5px ;
 }
 #todo-item::placeholder{
     color: var(--grey)
@@ -104,15 +107,7 @@ input, button{
 }
 
 
-.text{
-    
-    margin-top: 5px ;
-    /* margin-left: 1.5rem; */
-    
-    
-    
-    
-}
+
 
 
 .editBtn{
@@ -150,4 +145,95 @@ input, button{
     opacity: 0.1;
 }
 
+
+@media only screen and (max-width: 500px) {
+
+   
+    header {
+        /* padding: 1rem 2rem; */
+        max-width: 800px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0;
+        /* border:  2px solid red; */
+        
+        
+    
+    }
+    header h1{
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--grey);
+    }
+    .heading{
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--grey);
+        /* padding: 50px 0px 0px 110px ; */
+        max-width: 800px;
+        width: 100;
+        margin: 0;
+        
+    }
+   
+    
+    #messages{
+        display: flex;
+        justify-content: center;
+        
+      
+    }
+  
+  
+  
+   
+   
+    
+    #ul-item{
+        padding: 1rem 2rem;
+        max-width: 800px;
+        width: 100;
+        margin: auto;
+        
+    }
+    
+    
+    .text{
+        /* display: flex; */
+        flex: 1 1 0%;
+        background-color: var(--darker);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        color: var(--light);
+        border-spacing: space-between;
+        margin-top: 5px ;
+    }
+    
+    
+    .editBtn{
+        color: var(--pink);
+        font-size: 1rem;
+        font-weight: 700;
+        background-image: linear-gradient(to right , var(--pink), var(--purple));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
+        transition: 0.4s;
+        margin-left: 10px;
+        
+    }
+    .btn{
+        color: rgb(146, 39, 39) !important;
+        display: flex;
+        flex: end;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.4s;
+        
+    }
+} 
+    
 
